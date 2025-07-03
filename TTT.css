@@ -1,0 +1,34 @@
+body{
+    background-color: orange;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: -1px;
+    text-align: center;
+    font-size: 100px;
+    line-height: 100x;
+}
+.cell:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px; /* 3 cells * 100px + 2 * 3px margin */
+    height: 306px; /* 3 cells * 100px + 2 * 3px margin */
+    margin: auto;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
