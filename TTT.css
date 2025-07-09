@@ -8,7 +8,7 @@ body{
     display: inline-block;
     border: 1px solid black;
     box-sizing: border-box;
-    margin: -1px;
+    margin: 0px, 0px, 0px, 0px;
     text-align: center;
     font-size: 100px;
     line-height: 100x;
@@ -21,8 +21,8 @@ body{
 .board {
     display: flex;
     flex-wrap: wrap;
-    width: 306px; /* 3 cells * 100px + 2 * 3px margin */
-    height: 306px; /* 3 cells * 100px + 2 * 3px margin */
+    width: 300px; /* 3 cells * 100px + 2 * 3px margin */
+    height: 300px; /* 3 cells * 100px + 2 * 3px margin */
     margin: auto;
     box-sizing: border-box;
 }
