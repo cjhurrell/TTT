@@ -11,11 +11,7 @@ body{
     margin: 0px, 0px, 0px, 0px;
     text-align: center;
     font-size: 100px;
-    line-height: 100x;
-}
-.cell:hover {
-    background-color: lightblue;
-    transform: scale(1.05);
+    line-height: 100px;
 }
 
 .board {
@@ -27,8 +23,34 @@ body{
     box-sizing: border-box;
 }
 
+.cell:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+}
+
 h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .cell {
+    width: 100px;
+    height: 100px;
+
+}
+
+.board {
+    
+    width: 300px; /* 3 cells * 100px + 2 * 3px margin */
+    height: 300px; /* 3 cells * 100px + 2 * 3px margin */
+}
+
+.cell:hover {
+    background-color: orange;
+    transform: scale(1);
+  }
+
+
 }
