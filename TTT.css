@@ -2,6 +2,25 @@ body{
     background-color: orange;
 }
 
+.game-info {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+select{
+    display: block;
+    margin-bottom: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightblue;
+
+    
+}
+
 .cell {
     width: 100px;
     height: 100px;
