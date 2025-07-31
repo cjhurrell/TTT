@@ -33,6 +33,19 @@ function resetGame() {
   });
 }
 
+function computerMove() {
+  const cells = document.querySelectorAll(".cell");
+  let emptyCells = Array.from(cells).filter(cell => cell.textContent === "");
+  
+  if (emptyCells.length === 0) return; // No empty cells left
+
+  // Randomly select an empty cell
+  let randomCell = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+  randomCell.textContent = "O"; // Computer's symbol
+  turn = "X"; // Switch back to player1
+  checkWinner();
+}
+
 function select(cell) {
   if (cell.textContent !== "") return;// Cell already taken
 
@@ -44,6 +57,14 @@ cell.textContent = turn; // Player 2's symbol
 
   //cell.textContent = turn; // Set the cell to the current player's symbol
   turn = turn === "X" ? "O" : "X"; // Switch turns
+
+ const gameMode = document.getElementById("Game-mode").value;
+if (gameMode === "PVC" && turn === "O") 
+  setTimeout(() =>{computerMove();}, 500)
+   // Delay for computer's move
+  
+ 
+
 
 
   checkWinner();
